@@ -23,13 +23,20 @@
  *   along with this program; if not, write to the Free Software
  *   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
+function docJaSampleInit()
+{
+    $plugin_dir = basename(dirname(__FILE__));
+    load_plugin_textdomain('doc-ja-sample',false,$plugin_dir.'/languages');
+}
+
+add_action('plugins_loaded','docJaSampleInit');
 
 function helloDocJa()
 { 
     $day = '2nd';
 
-    echo "Hello!" . PHP_EOL;
-    printf("This is %s entry of Doc-ja Advent Calendar 2013.",$day); 
+    _e("Hello!",'doc-ja-sample') . PHP_EOL;
+    printf(__("This is %s entry of Doc-ja Advent Calendar 2013.",'doc-ja-sample'),$day); 
 }
 
 /*
