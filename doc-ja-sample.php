@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: doc-ja-sample
- * Plugin URI: http://localhost/
+ * Plugin URI: http://qiita.com/iwaim@github/items/883e4aeb29085e39581a
  * Description: Doc-ja Advent Calendar 2013 2nd.
  * Version: 1.0
  * Author: IWAI, Masaharu
